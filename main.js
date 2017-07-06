@@ -47,19 +47,33 @@ console.log(isVowel('c'))
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
+function sum(a, b){
+	return (a + b);
+}	
+console.log(sum(1, 5))
+console.log(sum(2998, 89342))
+console.log(sum(345, -345))
 
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
-
-
+function avg(a, b, c){
+	return ((a + b + c) / 3);
+}
+console.log(avg(10, 10, 10))
+console.log(avg(68, 34, 21))
+console.log(avg(1897, 2000, 1900))
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-
+function getLength(string){
+	return string.length;	
+}
+console.log(getLength('There once was boy named Sue'))
+console.log(getLength('I ate 12 chickens'))
+console.log(getLength('My cats breath smells like cat food.'))
 
 
 // 7.
@@ -67,8 +81,18 @@ console.log(isVowel('c'))
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
-
-
+function greaterThan(a, b){
+	if (b.length > a.length){
+		return true
+	}
+	
+	if (b.length <  a.length){
+		return false
+	}
+}
+console.log(greaterThan('Enough already', 'Too bad'))
+console.log(greaterThan('Good morning', 'Good afternoon'))
+console.log(greaterThan('Take care', 'Later'))
 
 // 8.
 // Write a function called `greet` that takes a
@@ -76,8 +100,12 @@ console.log(isVowel('c'))
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
-
-
+function greet(name){
+	return ('Hello, ' + name +'!');
+}
+console.log(greet('Ross'))
+console.log(greet('Spiderman'))
+console.log(greet('Ralph Wigham'))
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -87,3 +115,23 @@ console.log(isVowel('c'))
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+function madlib(Name, Verb1, Noun1, Verb2, Noun2){
+	return (Name + ' is ' + Verb1 + ' on ' + Noun1 + ' while ' + Verb2 + ' in ' + Noun2);
+}
+console.log(madlib('Ross', 'Eating', 'Cars', 'Running', 'Trees'))
+console.log(madlib('Spiderman', 'Reaching', 'Computers', 'Flying', 'Toasters'))
+console.log(madlib('Ralph Wigham', 'Peeing', 'Slotmachines', 'Pushing', 'Tables'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
